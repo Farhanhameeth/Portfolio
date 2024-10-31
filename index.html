@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+
+    <nav id="navbar-nav">
+      <div class="logo">Farhan Hameeth</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="ham-nav">
+      <div class="logo">Farhan Hameeth</div>
+      <div class="ham-menu">
+        <div class="ham-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="profile">
+      <div class="section-pic-container">
+        <img src="./assets/profile-pic.png" alt="Farhan Hameeth profile picture" />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Farhan Hameeth</h1>
+        <p class="section-text-p2">FullStack Developer Intern</p>
+        <p class="section-text-p3">An aspiring Full-Stack Developer currently pursuing a Bachelor's degree in Computer Science. I'm passionate about crafting innovative web applications and leveraging cutting-edge technologies to create seamless user experiences. With a strong foundation in Front-End and Back-End Development, I'm eager to contribute to dynamic projects and collaborate with talented teams.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV - Farhan Hameeth.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./contact.html'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/farhan-hameeth/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Farhanhameeth')"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="window.open('https://www.instagram.com/farhanhameeth/')"
+          />
+          <img
+            src="./assets/facebook.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="window.open('https://www.facebook.com/farhan.hameeth')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Farhan Hameeth. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
